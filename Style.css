@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #ff6347;
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    height: 80vh;
+    background: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5')
+                center/cover no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.hero-content button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #ff6347;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.highlight {
+    background: linear-gradient(135deg, #ff6347, #ff9068);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu {
+    padding: 60px;
+    text-align: center;
+}
+
+.menu-btn {
+    padding: 14px 40px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff6347, #ff9068);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(255, 99, 71, 0.5);
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 18px 35px rgba(255, 99, 71, 0.7);
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 220px;
+    border-radius: 5px;
+}
+
+.item span {
+    color: #ff6347;
+    font-weight: bold;
+}
+
+.booking {
+    background: #f9f9f9;
+    padding: 60px;
+    text-align: center;
+}
+
+.booking form {
+    max-width: 400px;
+    margin: auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.booking input,
+.booking button {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.booking button {
+    background: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

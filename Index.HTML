@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Tast Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🍽 Indian Tast</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#booking">Booking</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>Welcom to Indian Tast</h1>
+        <p>Delicious food & warm atmosphere</p>
+        <button onclick="scrollToBooking()">Book a Table</button>
+    </div>
+</section>
+
+<section class="menu" id="menu">
+    <button class="menu-btn">Our Menu 🍴</button>
+
+    <div class="menu-items">
+        <div class="item">
+            <h3>Butter Chicken</h3>
+            <p>Rich & creamy</p>
+            <span>₹250</span>
+        </div>
+
+        <div class="item">
+            <h3>Paneer Tikka</h3>
+            <p>Smoky & spicy</p>
+            <span>₹200</span>
+        </div>
+
+        <div class="item">
+            <h3>Biryani</h3>
+            <p>Hyderabadi style</p>
+            <span>₹300</span>
+        </div>
+        <div class="item">
+            <h3>Mocktail</h3>
+            <p>Soft & Hard drink</p>
+            <span>₹100</span>
+        </div>
+    </div>
+</section>
+
+<section class="booking" id="booking">
+    <h2>Book a Table</h2>
+
+    <form id="bookingForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="date" required>
+        <input type="time" required>
+        <input type="number" placeholder="Guests" required>
+        <button type="submit">Confirm Booking</button>
+    </form>
+
+    <p id="message"></p>
+</section>
+
+<footer>
+    <p>© 2026 Indian Tast Restaurant</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
